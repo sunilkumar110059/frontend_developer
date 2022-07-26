@@ -22,6 +22,16 @@ import {
   SearchIndex5,
 } from './component/pages/searchwrap/SearchModule'
 
+
+import {
+  TabWrapIndex,
+  TabIndex1,
+  TabIndex2,
+  TabIndex3,
+  TabIndex4,
+  TabIndex5
+} from './component/pages/tabwrap/TabModule';
+
 function App() {
   return (
     <Routes>
@@ -47,6 +57,16 @@ function App() {
       <Route path="/searchwrap/search4" element={<SearchIndex4 />} />
       <Route path="/searchwrap/search5" element={<SearchIndex5 />} />
       {/* Search end */}
+
+
+      {/* Tab start */}
+      <Route path="/tabwrap" element={<TabWrapIndex />} />
+      <Route path="/tabwrap/tab1" element={<TabIndex1 />} />
+      <Route path="/tabwrap/tab2" element={<TabIndex2 />} />
+      <Route path="/tabwrap/tab3" element={<TabIndex3 />} />
+      <Route path="/tabwrap/tab4" element={<TabIndex4 />} />
+      <Route path="/tabwrap/tab5" element={<TabIndex5 />} />
+      {/* Tab end */}
 
       <Route path="*" element={<PageNotFound />} />
     </Routes>

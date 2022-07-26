@@ -11,7 +11,7 @@ function Input(props) {
             {LabelText !== "" && <label className={`ovr ${LabelAddClass}`} > {LabelText}</label>}
 
 
-            <div className={`forms ${FormAddClass}`}>
+            <div className={`forms ${FormAddClass ? FormAddClass : "border1 bordercolor2_4"}`}>
                 <input
                     className={`inputs ${InputAddClass}`}
                     autoComplete={AutoComplete}

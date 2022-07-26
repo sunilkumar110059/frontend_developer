@@ -32,7 +32,16 @@
 
 
 .transbg_1{background-color:rgba(0, 0, 0 , 0.8);}
+
 .forms{display:flex;flex-wrap:wrap;align-items:stretch;width:100%;}
 .forms > .inputs{ flex: 1 1 auto;width: 1%;min-width: 0;display: block;}
 .forms > .inputlabel{flex:0 0 auto;width:100%;}
 .forms > .inputicon{display: flex; text-align: center;align-items: center;}
+
+
+.forms .tera{padding:5px;width:100%;height:90px;background-color:#FFF;color:#4d4d4d;}
+
+.forms > .selects{width:100%;height:35px;}
+.forms > .selects > option{padding:8px 10px;border-bottom:solid 1px #f1f1f1;}
+.forms > .fa_right{position:absolute; top: 0; right:0; height:100%; width:30px; z-index:3;display: flex;justify-content: center;align-items: center;}
+.forms > .fa_left{position:absolute; top: 0; left:0; height:100%; width:30px; z-index:3;display: flex;justify-content: center;align-items: center;}

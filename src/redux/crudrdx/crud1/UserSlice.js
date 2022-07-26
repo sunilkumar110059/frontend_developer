@@ -114,10 +114,13 @@ const userSlice = createSlice({
         [editUserActionFn.fulfilled]: (state, action) => {
             return {
                 ...state,
-                users: [...state.users, action.payload],
+                //  users: [...state.users, action.payload],
+                users: current(state.users).map((user) => user._id === action.payload._id ? action.payload : user),
                 status: "editSuccess",
             }
         },
+
+
         [editUserActionFn.pending]: (state, action) => {
             return { ...state, status: "editLoad" }
         },

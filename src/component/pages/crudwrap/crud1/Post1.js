@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Input } from '../../../constant/Forms/FormIndex';
 import Layout from '../../../layout/Layout';
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
@@ -74,154 +75,175 @@ function Post1() {
                 <div className='cover'>
                     <div className='row'>
                         <div className="col-md-3 my-3">
-                            <div className='ovr mb-1 fw-bold'> Name</div>
-                            <input
-                                className='p-2 border1 bordercolor2_4 w-100'
-                                type="text"
-                                name='name'
-                                value={name}
-                                onChange={(e) => onChangeHander(e)}
+                            <Input
+                                LabelAddClass="d-block mb-1 fw-bold"
+                                LabelText="Name"
+                                FormAddClass={`border1 ${name === "" && errors.name ? "bordercolor3_1" : "bordercolor2_4"}`}
+                                InputAddClass="p-2"
+                                InputType="text"
+                                InputName="name"
+                                InputValue={name}
+                                onChangeHandler={(e) => onChangeHander(e)}
                             />
                             {name === "" && <div className='font10 color3_1'> {name === "" && errors.name}</div>}
                         </div>
 
                         <div className="col-md-3 my-3">
-                            <div className='ovr mb-1 fw-bold'> User Name</div>
-                            <input
-                                className='p-2 border1 bordercolor2_4 w-100'
-                                type="text"
-                                name='username'
-                                value={username}
-                                onChange={(e) => onChangeHander(e)}
+                            <Input
+                                LabelAddClass="d-block mb-1 fw-bold"
+                                LabelText="User Name"
+                                FormAddClass={`border1 ${username === "" && errors.username ? "bordercolor3_1" : "bordercolor2_4"}`}
+                                InputAddClass="p-2"
+                                InputType="text"
+                                InputName="username"
+                                InputValue={username}
+                                onChangeHandler={(e) => onChangeHander(e)}
                             />
-
                             {username === "" && <div className='font10 color3_1'> {username === "" && errors.username}</div>}
                         </div>
 
                         <div className="col-md-3 my-3">
-                            <div className='ovr mb-1 fw-bold'> Email</div>
-                            <input
-                                className='p-2 border1 bordercolor2_4 w-100'
-                                type="text"
-                                name='email'
-                                value={email}
-                                onChange={(e) => onChangeHander(e)}
+                            <Input
+                                LabelAddClass="d-block mb-1 fw-bold"
+                                LabelText="Email"
+                                FormAddClass={`border1 ${email === "" && errors.email ? "bordercolor3_1" : "bordercolor2_4"}`}
+                                InputAddClass="p-2"
+                                InputType="text"
+                                InputName="email"
+                                InputValue={email}
+                                onChangeHandler={(e) => onChangeHander(e)}
                             />
-
                             {email === "" && <div className='font10 color3_1'> {email === "" && errors.email}</div>}
 
                         </div>
 
                         <div className="col-md-3 my-3">
-                            <div className='ovr mb-1 fw-bold'> Phone</div>
-                            <input
-                                className='p-2 border1 bordercolor2_4 w-100'
-                                type="text"
-                                name='phone'
-                                value={phone}
-                                onChange={(e) => onChangeHander(e)}
+                            <Input
+                                LabelAddClass="d-block mb-1 fw-bold"
+                                LabelText="Phone"
+                                FormAddClass={`border1 ${phone === "" && errors.phone ? "bordercolor3_1" : "bordercolor2_4"}`}
+                                InputAddClass="p-2"
+                                InputType="text"
+                                InputName="phone"
+                                InputValue={phone}
+                                onChangeHandler={(e) => onChangeHander(e)}
                             />
                             {phone === "" && <div className='font10 color3_1'> {phone === "" && errors.phone}</div>}
 
                         </div>
 
                         <div className="col-md-3 my-3">
-                            <div className='ovr mb-1 fw-bold'> Website</div>
-                            <input
-                                className='p-2 border1 bordercolor2_4 w-100'
-                                type="text"
-                                name='website'
-                                value={website}
-                                onChange={(e) => onChangeHander(e)}
+                            <Input
+                                LabelAddClass="d-block mb-1 fw-bold"
+                                LabelText="Website"
+                                FormAddClass={`border1 ${website === "" && errors.website ? "bordercolor3_1" : "bordercolor2_4"}`}
+                                InputAddClass="p-2"
+                                InputType="text"
+                                InputName="website"
+                                InputValue={website}
+                                onChangeHandler={(e) => onChangeHander(e)}
                             />
                             {website === "" && <div className='font10 color3_1'> {website === "" && errors.website}</div>}
 
                         </div>
 
                         <div className="col-md-3 my-3">
-                            <div className='ovr mb-1 fw-bold'> Street</div>
-                            <input
-                                className='p-2 border1 bordercolor2_4 w-100'
-                                type="text"
-                                name='street'
-                                value={street}
-                                onChange={(e) => onChangeHander(e)}
+                            <Input
+                                LabelAddClass="d-block mb-1 fw-bold"
+                                LabelText="Street"
+                                FormAddClass={`border1 ${street === "" && errors.street ? "bordercolor3_1" : "bordercolor2_4"}`}
+                                InputAddClass="p-2"
+                                InputType="text"
+                                InputName="street"
+                                InputValue={street}
+                                onChangeHandler={(e) => onChangeHander(e)}
                             />
                             {street === "" && <div className='font10 color3_1'> {street === "" && errors.street}</div>}
                         </div>
 
                         <div className="col-md-3 my-3">
-                            <div className='ovr mb-1 fw-bold'> Suite</div>
-                            <input
-                                className='p-2 border1 bordercolor2_4 w-100'
-                                type="text"
-                                name='suite'
-                                value={suite}
-                                onChange={(e) => onChangeHander(e)}
+                            <Input
+                                LabelAddClass="d-block mb-1 fw-bold"
+                                LabelText="Suite"
+                                FormAddClass={`border1 ${suite === "" && errors.suite ? "bordercolor3_1" : "bordercolor2_4"}`}
+                                InputAddClass="p-2"
+                                InputType="text"
+                                InputName="suite"
+                                InputValue={suite}
+                                onChangeHandler={(e) => onChangeHander(e)}
                             />
                             {suite === "" && <div className='font10 color3_1'> {suite === "" && errors.suite}</div>}
                         </div>
 
                         <div className="col-md-3 my-3">
-                            <div className='ovr mb-1 fw-bold'> City</div>
-                            <input
-                                className='p-2 border1 bordercolor2_4 w-100'
-                                type="text"
-                                name='city'
-                                value={city}
-                                onChange={(e) => onChangeHander(e)}
+                            <Input
+                                LabelAddClass="d-block mb-1 fw-bold"
+                                LabelText="City"
+                                FormAddClass={`border1 ${city === "" && errors.city ? "bordercolor3_1" : "bordercolor2_4"}`}
+                                InputAddClass="p-2"
+                                InputType="text"
+                                InputName="city"
+                                InputValue={city}
+                                onChangeHandler={(e) => onChangeHander(e)}
                             />
-
-
                             {city === "" && <div className='font10 color3_1'> {city === "" && errors.city}</div>}
-
                         </div>
 
                         <div className="col-md-3 my-3">
-                            <div className='ovr mb-1 fw-bold'> Zip Code</div>
-                            <input
-                                className='p-2 border1 bordercolor2_4 w-100'
-                                type="text"
-                                name='zipcode'
-                                value={zipcode}
-                                onChange={(e) => onChangeHander(e)}
+                            <Input
+                                LabelAddClass="d-block mb-1 fw-bold"
+                                LabelText="Zip Code"
+                                FormAddClass={`border1 ${zipcode === "" && errors.zipcode ? "bordercolor3_1" : "bordercolor2_4"}`}
+                                InputAddClass="p-2"
+                                InputType="text"
+                                InputName="zipcode"
+                                InputValue={zipcode}
+                                onChangeHandler={(e) => onChangeHander(e)}
                             />
-
                             {zipcode === "" && <div className='font10 color3_1'> {zipcode === "" && errors.zipcode}</div>}
                         </div>
 
                         <div className="col-md-3 my-3">
-                            <div className='ovr mb-1 fw-bold'> Lat</div>
-                            <input
-                                className='p-2 border1 bordercolor2_4 w-100'
-                                type="text"
-                                name='lat'
-                                value={lat}
-                                onChange={(e) => onChangeHander(e)}
+
+                            <Input
+                                LabelAddClass="d-block mb-1 fw-bold"
+                                LabelText="Lat"
+                                FormAddClass={`border1 ${lat === "" && errors.lat ? "bordercolor3_1" : "bordercolor2_4"}`}
+                                InputAddClass="p-2"
+                                InputType="text"
+                                InputName="lat"
+                                InputValue={lat}
+                                onChangeHandler={(e) => onChangeHander(e)}
                             />
                             {lat === "" && <div className='font10 color3_1'> {lat === "" && errors.lat}</div>}
                         </div>
 
                         <div className="col-md-3 my-3">
-                            <div className='ovr mb-1 fw-bold'> Lng</div>
-                            <input
-                                className='p-2 border1 bordercolor2_4 w-100'
-                                type="text"
-                                name='lng'
-                                value={lng}
-                                onChange={(e) => onChangeHander(e)}
+
+                            <Input
+                                LabelAddClass="d-block mb-1 fw-bold"
+                                LabelText="Lng"
+                                FormAddClass={`border1 ${lng === "" && errors.lng ? "bordercolor3_1" : "bordercolor2_4"}`}
+                                InputAddClass="p-2"
+                                InputType="text"
+                                InputName="lng"
+                                InputValue={lng}
+                                onChangeHandler={(e) => onChangeHander(e)}
                             />
                             {lng === "" && <div className='font10 color3_1'> {lng === "" && errors.lng}</div>}
                         </div>
 
                         <div className="col-md-3 my-3">
-                            <div className='ovr mb-1 fw-bold'> Company Name</div>
-                            <input
-                                className='p-2 border1 bordercolor2_4 w-100'
-                                type="text"
-                                name='companyname'
-                                value={companyname}
-                                onChange={(e) => onChangeHander(e)}
+
+                            <Input
+                                LabelAddClass="d-block mb-1 fw-bold"
+                                LabelText="Company Name"
+                                FormAddClass={`border1 ${companyname === "" && errors.companyname ? "bordercolor3_1" : "bordercolor2_4"}`}
+                                InputAddClass="p-2"
+                                InputType="text"
+                                InputName="companyname"
+                                InputValue={companyname}
+                                onChangeHandler={(e) => onChangeHander(e)}
                             />
                             {companyname === "" && <div className='font10 color3_1'> {companyname === "" && errors.companyname}</div>}
 
@@ -229,24 +251,30 @@ function Post1() {
                         </div>
 
                         <div className="col-md-3 my-3">
-                            <div className='ovr mb-1 fw-bold'> Catch Phrase</div>
-                            <input
-                                className='p-2 border1 bordercolor2_4 w-100'
-                                type="text"
-                                name='catchPhrase'
-                                value={catchPhrase}
-                                onChange={(e) => onChangeHander(e)}
+
+                            <Input
+                                LabelAddClass="d-block mb-1 fw-bold"
+                                LabelText="Catch Phrase"
+                                FormAddClass={`border1 ${catchPhrase === "" && errors.catchPhrase ? "bordercolor3_1" : "bordercolor2_4"}`}
+                                InputAddClass="p-2"
+                                InputType="text"
+                                InputName="catchPhrase"
+                                InputValue={catchPhrase}
+                                onChangeHandler={(e) => onChangeHander(e)}
                             />
                             {catchPhrase === "" && <div className='font10 color3_1'> {catchPhrase === "" && errors.catchPhrase}</div>}
                         </div>
                         <div className="col-md-3 my-3">
-                            <div className='ovr mb-1 fw-bold'> BS</div>
-                            <input
-                                className='p-2 border1 bordercolor2_4 w-100'
-                                type="text"
-                                name='bs'
-                                value={bs}
-                                onChange={(e) => onChangeHander(e)}
+
+                            <Input
+                                LabelAddClass="d-block mb-1 fw-bold"
+                                LabelText="BS"
+                                FormAddClass={`border1 ${bs === "" && errors.bs ? "bordercolor3_1" : "bordercolor2_4"}`}
+                                InputAddClass="p-2"
+                                InputType="text"
+                                InputName="bs"
+                                InputValue={bs}
+                                onChangeHandler={(e) => onChangeHander(e)}
                             />
                             {bs === "" && <div className='font10 color3_1'> {bs === "" && errors.bs}</div>}
                         </div>

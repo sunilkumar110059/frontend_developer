@@ -21,6 +21,7 @@ function View1() {
     }
 
 
+
     useEffect(() => {
         const userFind = users.find((user) => user._id === viewID)
         SetUserViewFn(userFind)
@@ -35,7 +36,10 @@ function View1() {
             <div className='cover'>
                 <div className='row'>
 
-                    <div className='col'> <div className='bg5_1 color1 py-2 px-3 d-inline-block cursor-pointer' onClick={() => backHandler()}>Back</div></div>
+                    <div className='col-auto'> <div className='bg5_1 color1 py-2 px-3 d-inline-block cursor-pointer' onClick={() => backHandler()}>Back</div></div>
+                    <div className='col'>
+                        <div className='bg5_1 color1 py-2 px-3 d-inline-block cursor-pointer' onClick={navigate(`/crudwrap/crud1/edit1/${viewID}`)}>Edit</div>
+                    </div>
                     <div className='col-auto'><h1>View Data</h1></div>
                 </div>
             </div>

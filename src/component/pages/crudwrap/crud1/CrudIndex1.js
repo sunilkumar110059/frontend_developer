@@ -90,7 +90,7 @@ function CrudIndex1() {
 
     return (
         <Layout>
-          <div className="cover bg2_5 px-3 py-1 border1 bordercolor2_4 mb-4">
+            <div className="cover bg2_5 px-3 py-1 border1 bordercolor2_4 mb-4">
                 <div className="row">
                     <div className="col-auto">
                         <h1>Crud 1</h1>
@@ -107,8 +107,8 @@ function CrudIndex1() {
                                 <div className='bg3_1 color1 py-2 px-3  cursor-pointer'>Delete All</div>
                             </div>
                         )}
+                        <div className='col'></div>
 
-                        <div className='col'> Crud Application</div>
                         <div className='col-auto'>
                             <div className='bg4_1 color1 py-2 px-3 d-inline-block cursor-pointer'
                                 onClick={() => navigate(`${pathname}/post1`)}>Add New Post {GetUsers.length > 0 ? GetUsers.length : "no"}</div>

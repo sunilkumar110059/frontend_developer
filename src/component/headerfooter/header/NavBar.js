@@ -6,11 +6,9 @@ function NavBar() {
         { title: "Home", name: "HOME", path: "/" },
         { title: "About", name: "ABOUT", path: "/about" },
         { title: "Crud", name: "CRUD", path: "/crudwrap" },
-
-        { title: "SEARCH", name: "SEARCH", path: "/searchwrap" }
-        
+        { title: "SEARCH", name: "SEARCH", path: "/searchwrap" },
+        { title: "TAB", name: "TAB", path: "/tabwrap" }
     ]
-
     
     return (
         <div className='cover navwrap'>

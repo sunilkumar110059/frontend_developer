@@ -80,6 +80,8 @@ overflow-x: hidden;
   .bordercolor2_3{border-color:var(--color2_3)}
   .bordercolor2_4{border-color:var(--color2_4)}
   .bordercolor2_5{border-color:var(--color2_5)}
+
+  .bordercolor3_1{background-color: var(--color3_1)}
   
 
   .bordercolor3_1{border-color: var(--danger)}
