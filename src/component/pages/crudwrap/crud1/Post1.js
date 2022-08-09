@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Input } from '../../../constant/Forms/FormIndex';
-import Layout from '../../../layout/Layout';
+import { Input } from '../../../shared/Forms/FormIndex';
+import Layout from '../../../shared/layout/Layout';
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 import { postUserActionFn } from '../../../../redux/crudrdx/crud1/UserSlice';

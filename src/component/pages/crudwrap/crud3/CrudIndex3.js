@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Layout from '../../../layout/Layout';
+import Layout from '../../../shared/layout/Layout';
 
 import Post3 from '../crud3/Post3';
 import Edit3 from '../crud3/Edit3';

@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useLocation } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
-import Layout from '../../../layout/Layout';
-import { ConfirmationModal } from '../../../constant/modals/ModalIndex';
+import Layout from '../../../shared/layout/Layout';
+import { ConfirmationModal } from '../../../shared/modals/ModalIndex';
+
 import { getUserActionFn, deletetUserActionFn, deletetManyUserActionFn } from '../../../../redux/crudrdx/crud1/UserSlice';
 
 

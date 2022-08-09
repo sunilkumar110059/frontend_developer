@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getTodoActionFn, deletetTodoActionFn, editObjectPassFn } from '../../../../redux/crudrdx/crud1/TodoSlice';
 
 
-import { ConfirmationModal } from '../../../constant/modals/ModalIndex';
+import { ConfirmationModal } from '../../../shared/modals/ModalIndex';
 
 
 

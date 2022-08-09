@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux'
 import { postSearchActionFn } from '../../../../redux/searchrdx/SearchSlice1';
-import { Input } from '../../../constant/Forms/FormIndex';
+import { Input } from '../../../shared/Forms/FormIndex';
 
 function Post1() {
 

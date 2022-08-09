@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { ConfirmationModal } from '../../../constant/modals/ModalIndex';
+import { ConfirmationModal } from '../../../shared/modals/ModalIndex';
 import { getTodoActionFn, deletetTodoActionFn } from '../../../../redux/crudrdx/crud1/TodoSlice';
 
 

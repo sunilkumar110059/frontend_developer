@@ -1,5 +1,5 @@
 import React from 'react'
-import { Input } from '../../../constant/Forms/FormIndex';
+import { Input } from '../../../shared/Forms/FormIndex';
 
 function FilterBar1({ getFilterValueFn }) {
     const onChangeHandle = (evt) => {

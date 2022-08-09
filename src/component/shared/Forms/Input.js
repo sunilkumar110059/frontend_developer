@@ -30,18 +30,7 @@ function Input(props) {
 };
 
 Input.defaultProps = {
-    LabelAddClass: "",
-    LabelText: "",
-
-    FormAddClass: "",
-    InputAddClass: "",
-    autoComplete: "",
-    type: "text",
-    name: "",
-    value: "",
-    readOnly: "",
-    placeholder: "",
-
+    AutoComplete: "off",
 }
 
 export default Input;

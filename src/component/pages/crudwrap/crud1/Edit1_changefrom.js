@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Layout from '../../../layout/Layout';
+import Layout from '../../../shared/layout/Layout';
 import { useParams, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
 import { getUserActionFn, editUserActionFn } from '../../../../redux/crudrdx/crud1/UserSlice';

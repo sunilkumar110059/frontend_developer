@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch} from 'react-redux';
 import { postTodoActionFn } from '../../../../redux/crudrdx/crud1/TodoSlice';
-import { Input } from '../../../constant/Forms/FormIndex';
+import { Input } from '../../../shared/Forms/FormIndex';
 
 function Post3() {
     let dispatch = useDispatch()

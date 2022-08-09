@@ -1,4 +1,4 @@
-import { createAsyncThunk} from '@reduxjs/toolkit';
+import { createAsyncThunk } from '@reduxjs/toolkit';
 
 export const getTabActionFn = createAsyncThunk('TAB/GET', async () => {
     const res = await fetch('http://localhost:8000/tab');

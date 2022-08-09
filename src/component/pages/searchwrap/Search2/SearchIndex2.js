@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Layout from '../../../layout/Layout';
+import Layout from '../../../shared/layout/Layout';
 import FilterBar2 from './FilterBar2';
 import Post2 from './Post2';
 import SearchList2 from './Listing2';

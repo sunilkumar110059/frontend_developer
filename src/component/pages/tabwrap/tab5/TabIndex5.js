@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../../../layout/Layout';
+import Layout from '../../../shared/layout/Layout';
 
 function TabIndex5() {
     return (

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Input, SelectBox, TextArea } from '../../../constant/Forms/FormIndex';
+import { Input, SelectBox, TextArea } from '../../../shared/Forms/FormIndex';
 import { useDispatch } from "react-redux";
 import { postTabActionFn } from '../../../../redux/tabrdx/TabAction';
 
@@ -7,14 +7,14 @@ import { postTabActionFn } from '../../../../redux/tabrdx/TabAction';
 function Post1() {
     let dispatch = useDispatch()
     const [MenuState, SetMenuStateFn] = useState({
-        name: "",
-        category: "",
-        price: "",
-        image: "",
-        description: "",
+        name: "Sabji",
+        category: "Dinner",
+        price: "100",
+        image: "profile.jpg",
+        description: "Lorean Lipsum sum",
 
     })
-    const { name, category, price, image, description } = MenuState
+    const { name, category, price, description } = MenuState
 
 
     const onChangeHandle = (evt) => {
@@ -27,15 +27,20 @@ function Post1() {
 
     const submitHandle = (evt) => {
         evt.preventDefault()
+        // let updateMenuState = MenuState.image === "" ? ({ ...MenuState }, delete MenuState.image) : MenuState
+        let updateMenuState = [MenuState].find((urs) => urs.image === "" ? delete MenuState.image : MenuState)
 
-        console.log(MenuState)
-        // if (name !== "" && category !== "" && price !== "" && image !== "" && description !== "") {
-        //     dispatch(postTabActionFn(MenuState))
-        // }
+        if (name !== "" && category !== "" && price !== "" && description !== "") {
+            dispatch(postTabActionFn(updateMenuState))
+        }
     }
 
-    const uploadHandle = (e) => { 
-        console.log(e.target.files[0])
+    const uploadHandle = (e) => {
+
+        SetMenuStateFn({
+            ...MenuState,
+            image: e.target.files[0]
+        })
     }
 
     return (
@@ -83,15 +88,12 @@ function Post1() {
                         />
                     </div>
                     <div className="col-3 mb-3">
-                        <Input
-                            LabelAddClass="d-block mb-1 fw-bold"
-                            LabelText="Image"
-                            FormAddClass="border1 bordercolor2_4"
-                            InputAddClass="p-2"
-                            InputType="text"
-                            InputName="image"
-                            InputValue={image}
-                            onChangeHandler={(e) => onChangeHandle(e)}
+                        <input
+                            accept='image/*'
+                            id="imageUpload"
+                            multiple
+                            type="file"
+                            onChange={(e) => uploadHandle(e)}
                         />
                     </div>
 
@@ -107,17 +109,7 @@ function Post1() {
                         />
                     </div>
 
-                    <div className="col-auto mb-3">
-                        <input
-                            accept='image/*'
-                            id="imageUpload"
-                            multiple
-                            type="file"
-                            onChange={(e) => uploadHandle(e)}
-                        
-                        />
-                    </div>
-
+                  
                     <div className="col-auto mb-3">
                         <button type='submit' className="bg4_1 color1 py-2 px-3 cursor-pointer">Post</button>
                     </div>

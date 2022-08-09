@@ -1,8 +1,22 @@
 import React from 'react';
-import Layout from '../../layout/Layout';
+import Layout from '../../shared/layout/Layout';
 
 
 function HomeIndex() {
+
+    let factfun = (num) => {
+        let int = num.toString().split("").reverse().join("")
+
+        if (int.endsWith("-")) {
+            int = "-" + int
+
+        }
+        console.log(mc)
+
+    }
+
+    factfun(-123)
+
 
     return (
         <Layout>
@@ -18,7 +32,7 @@ function HomeIndex() {
 }
 
 
-
+// Using call() method to Chain Constructors
 
 
 export default HomeIndex
